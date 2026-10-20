@@ -1,59 +1,152 @@
 <!DOCTYPE html>
-<html>
+<html lang="id">
 <head>
-    <title>Profil Andre Zulyan Pratama</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MyProfile - Andre Zulyan Pratama</title>
+    <!-- External CSS -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Internal CSS -->
+    <style>
+        footer {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 8px 10px 0;
+            border-top: 1px solid #000;
+            color: #777;
+            font-size: 12px;
+        }
+    </style>
 </head>
+<body id="atas">
+    <!-- Inline CSS -->
+    <header style="height: 122px;">
+        <div class="container navbar">
+            <a class="brand" href="#atas"><span>My</span>Profile</a>
 
-<body>
-    <cente>
+            <nav>
+                <ul class="links">
+                    <li><a href="#tentang">Tentang</a></li>
+                    <li><a href="#skill">Skill</a></li>
+                    <li><a href="#pendidikan">Pendidikan</a></li>
+                    <li><a href="#hubungi">Hubungi</a></li>
+                </ul>
+            </nav>
 
-    <h1>Andre Zulyan Pratama</h1>
+            <img class="logo" src="assets/umrah-logo.png" alt="Logo Universitas Maritim Raja Ali Haji">
+        </div>
+    </header>
 
-    <img src="foto2.jpeg" alt="Foto Andre" width="200">
+    <main>
+        <section>
+            <div class="container hero">
+                <div class="text">
+                    <p class="subtitle">Mahasiswa Teknik Informatika -- --</p>
+                    <h1 style="white-space: nowrap;">Halo, Saya <span>Andre Zulyan Pratama</span></h1>
+                    <p class="desc">
+                        Saya adalah mahasiswa Teknik Informatika di UNIVERSITAS MARITIM RAJA ALI HAJI
+                        yang tertarik dengan dunia teknologi, pemrograman, dan desain website. Saat ini
+                        saya terus belajar untuk mengembangkan kemampuan dan mencoba hal-hal baru di
+                        bidang teknologi.
+                    </p>
+                    <div class="buttons">
+                        <a class="button primary" href="#tentang">About Me</a>
+                        <a class="button" href="#hubungi">Hubungi Saya</a>
+                    </div>
+                </div>
 
-    <h2>Deskripsi Diri</h2>
+                <div class="profile">
+                    <img class="photo" src="assets/profile.jpg" alt="Foto Andre Zulyan Pratama">
+                    <div class="caption">
+                        <strong>Andre Zulyan Pratama</strong>
+                        <span>Informatics Student</span>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-    <p>
-        Halo! Saya <b>Andre Zulyan Pratama</b>.
-        Saya adalah mahasiswa Teknik Informatika di UNIVERSITAS MARITIM RAJA ALI HAJI
-        yang tertarik dengan dunia teknologi, pemrograman, dan desain website.
-    </p>
+        <section id="tentang">
+            <div class="container">
+                <p class="eyebrow">Perkenalan</p>
+                <h2>Tentang <span>Saya</span></h2>
+                <div class="about">
+                    <p>Hi!</p>
+                    <p>Nama saya <span>Andre Zulyan Pratama</span>,<br>Saya lahir di Karimun pada 24 Maret 2007.</p>
+                    <p>
+                        Saat ini saya merupakan mahasiswa Program Studi <span>Teknik Informatika</span>,
+                        Universitas Maritim Raja Ali Haji (<span>UMRAH</span>). Saya memiliki minat dalam bidang
+                        teknologi informasi, pemrograman, dan pengembangan web. Selain kegiatan akademik,
+                        saya juga memiliki ketertarikan pada bidang olahraga, khususnya futsal, badminton,
+                        dan sepak bola.
+                    </p>
+                </div>
+            </div>
+        </section>
 
-    <h2>Skill</h2>
+        <section id="skill">
+            <div class="container skills">
+                <div class="copy">
+                    <p class="eyebrow">Kemampuan</p>
+                    <h2>Skill</h2>
+                    <ul class="tags">
+                        <li>C++</li>
+                        <li>Figma</li>
+                        <li>Database MySql</li>
+                    </ul>
+                </div>
 
-    <ul>
-        <li>C++ - pemula</li>
-        <li>Figma - pemula</li>
-        <li>Database MySQL - pemula</li>
-    </ul>
+                <div class="collage">
+                    <img class="photo back" src="assets/profile.jpg" alt="Foto Andre Zulyan Pratama">
+                    <img class="photo front" src="assets/profile.jpg" alt="Foto Andre Zulyan Pratama">
+                    <img class="logo" src="assets/umrah-logo.png" alt="Logo Universitas Maritim Raja Ali Haji">
+                    <div class="caption">
+                        <strong>Andre Zulyan Pratama</strong>
+                        <span>Informatics Student</span>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-    <h2>Riwayat Pendidikan</h2>
+        <section id="pendidikan">
+            <div class="container">
+                <p class="eyebrow">Perjalanan Akademik</p>
+                <h2>Riwayat <span>Pendidikan</span></h2>
+                <ul>
+                    <li>SDN 003 Buru (<span>2013 - 2019</span>)</li>
+                    <li>SMP Negeri 1 Karimun (<span>2019 - 2022</span>)</li>
+                    <li>SMA Negeri 1 Karimun (<span>2022 - 2025</span>)</li>
+                    <li>Universitas Maritim Raja Ali Haji - Teknik Informatika (<span>2025 - Sekarang</span>)</li>
+                </ul>
+            </div>
+        </section>
 
-    <ol>
-        <li>SDN 003 Buru (2013 - 2019)</li>
-        <li>SMP Negeri 1 Karimun (2019 - 2022)</li>
-        <li>SMA Negeri 1 Karimun (2022 - 2025)</li>
-    </ol>
+        <section id="hubungi">
+            <div class="container">
+                <p class="eyebrow">Mari Terhubung!</p>
+                <h2>Hubungi <span>Saya</span></h2>
+                <ul>
+                    <li>
+                        <strong>Email</strong>
+                        <a href="mailto:andrepr265@gmail.com">andrepr265@gmail.com</a>
+                    </li>
+                    <li>
+                        <strong>GitHub</strong>
+                        <a href="https://github.com/andrepr265-ship-it">https://github.com/andrepr265-ship-it</a>
+                    </li>
+                    <li>
+                        <strong>Instagram</strong>
+                        <a href="https://www.instagram.com/andreezp_">@andreezp_</a>
+                    </li>
+                </ul>
+            </div>
+        </section>
+    </main>
 
-    <h2>Hobi</h2>
-
-    <ul>
-        <li>Futsal</li>
-        <li>Sepak Bola</li>
-        <li>Badminton</li>
-        <li>Mendengarkan Musik</li>
-    </ul>
-
-    <h2>Sosial Media</h2>
-
-    <a href="https://www.instagram.com/andreezp_"target="_blank">Instagram</a>
-    <br>
-    <a href="https://www.tiktok.com/@andreezp"target="_blank">Tiktok</a>
-    <br>
-
-    <hr>
-    <p>© 2026 Andre Zulyan Pratama</p>
-
-    </cente>
+    <footer>
+        <p>&copy; 2026 Andre Zulyan Pratama.</p>
+        <a href="#atas">Kembali ke atas</a>
+    </footer>
 </body>
 </html>

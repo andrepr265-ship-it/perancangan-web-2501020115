@@ -1,0 +1,177 @@
+/* 1. BASIC SELECTOR */
+
+/* Universal selector */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Element selector */
+body { font-family: Arial, Helvetica, sans-serif; }
+a { text-decoration: none; }
+h1 { margin-bottom: 16px; }
+
+/* Class selector */
+.container {
+    width: 84%;
+    max-width: 1360px;
+    margin: auto;
+    border-bottom: 1px solid #000;
+}
+
+.navbar {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.brand { color: #000; font-size: 17px; font-weight: bold; }
+.links { display: flex; gap: 76px; list-style: none; }
+.logo { width: 50px; height: 50px; object-fit: contain; }
+
+.hero {
+    min-height: 608px;
+    display: grid;
+    grid-template-columns: 58% 42%;
+    align-items: center;
+}
+.text { transform: translateY(-38px); }
+.subtitle { margin-bottom: 22px; }
+.desc { max-width: 620px; line-height: 1.22; }
+.buttons { display: flex; gap: 30px; margin-top: 66px; }
+.profile {
+    width: 284px;
+    text-align: center;
+    justify-self: start;
+    transform: translate(-24px, -7px);
+}
+
+.button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 140px;
+    min-height: 60px;
+    padding: 0 22px;
+    border: 1px solid #007FFF;
+    border-radius: 20px;
+    background: white;
+    color: #007FFF;
+    font-weight: bold;
+}
+.primary { background: #007FFF; color: white; }
+
+.photo {
+    display: block;
+    width: 100%;
+    aspect-ratio: 3 / 4;
+    object-fit: cover;
+    border: 3px solid #007FFF;
+    border-radius: 20px;
+}
+
+.caption {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 12px;
+    line-height: 1.25;
+}
+
+.eyebrow { margin-bottom: 1px; }
+.about { max-width: 800px; line-height: 1.22; }
+
+.skills { position: relative; min-height: 228px; }
+.copy { padding-top: 24px; }
+.tags {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 22px;
+    padding-left: 4px;
+    list-style: none;
+}
+
+.collage {
+    position: absolute;
+    top: 20px;
+    right: 157px;
+    width: 398px;
+    height: 450px;
+}
+.back { top: 0; right: 0; }
+.front { top: 109px; left: 22px; }
+
+/* 2. GROUPING SELECTOR */
+span, a { color: #007FFF; }
+h1, h2 { font-size: 36px; line-height: 1.2; }
+.subtitle, .eyebrow { color: #777; font-size: 18px; }
+
+/* 3. ID SELECTOR */
+#tentang { padding-top: 22px; }
+#tentang .container { padding-bottom: 60px; }
+#tentang h2 { margin-bottom: 15px; }
+
+#pendidikan { min-height: 260px; padding-top: 20px; }
+#pendidikan .container { padding-bottom: 18px; }
+#pendidikan h2 { margin-bottom: 16px; }
+
+#hubungi { padding: 22px 0 24px; }
+#hubungi .container { border: none; }
+#hubungi h2 { margin-bottom: 18px; }
+
+/* 4. COMBINATOR SELECTOR */
+
+/* Descendant (spasi) */
+nav a { color: #000; font-size: 15px; }
+footer a { color: #777; }
+.caption strong { font-size: 15px; }
+.caption span { color: #777; font-size: 13px; }
+.copy h2 { margin-bottom: 18px; }
+.copy .eyebrow { margin-bottom: 0; }
+.collage .photo { position: absolute; width: 222px; }
+.collage .logo { position: absolute; top: 354px; left: -16px; width: 72px; height: 72px; }
+.collage .caption { position: absolute; top: 338px; right: -67px; width: 205px; margin-top: 0; }
+#pendidikan ul {
+    display: flex;
+    flex-direction: column;
+    gap: 21px;
+    list-style: none;
+    font-size: 19px;
+}
+#hubungi ul {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 23px;
+    list-style: none;
+}
+
+/* Child (>) */
+.tags > li {
+    padding: 1px 5px 2px;
+    border-radius: 14px;
+    background: #007FFF;
+    color: white;
+    font-size: 18px;
+    line-height: 1.1;
+}
+#hubungi ul > li {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+    font-size: 18px;
+    line-height: 1.2;
+}
+
+/* General sibling (~) */
+.about p ~ p { margin-top: 2px; }
+
+/* 5. PSEUDO SELECTOR */
+
+/* Pseudo-class (:) */
+.about p:last-child { margin-top: 18px; }
+
+/* Pseudo-element (::) */
+footer a::after { content: " \2191"; }
